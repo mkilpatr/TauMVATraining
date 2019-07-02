@@ -1,0 +1,17 @@
+-> go to bash
+
+-> wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+
+-> bash Miniconda2-latest-Linux-x86_64.sh
+
+-> conda create -n xgb python=2.7
+
+-> source activate xgb [always do run this]
+
+-> rsync -avP /home/hqu/miniconda2/envs/sklearn/etc/conda /home/$USER/miniconda2/envs/xgb/etc/conda
+
+-> pip install xgboost matplotlib numpy root_numpy pandas scikit-learn tables
+
+-> python xgb.py
+
+
